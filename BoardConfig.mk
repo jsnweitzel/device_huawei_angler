@@ -32,6 +32,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a7
 ENABLE_CPUSETS := true
 
 # Inline kernel building
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
 TARGET_KERNEL_CONFIG := kylo_defconfig
